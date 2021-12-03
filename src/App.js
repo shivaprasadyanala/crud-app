@@ -1,7 +1,11 @@
 import Create from './components/create';
 import Read from './components/read';
 import Update from './components/update';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+// import { transitions, positions, Provider as AlertProvider } from 'react-alert';
+// import AlertTemplate from 'react-alert-template-basic';
+
+
 function App() {
   return (
     // <Create />
@@ -26,12 +30,16 @@ function App() {
 
         </div>
         <div>
+          {/* <AlertProvider template={AlertTemplate}> */}
           <Routes>
+
             <Route path="/create" element={<Create />} />
-            {/* <Create /> */}
+
+
             <Route path="/read" element={<Read />} />
             <Route path="/update" element={<Update />} />
           </Routes>
+          {/* </AlertProvider> */}
         </div>
       </div>
     </Router>
