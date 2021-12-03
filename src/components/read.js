@@ -30,9 +30,11 @@ const Read = () => {
           {
             apiData.map((data) => {
               return (
-                <tr className="flex place-content-around border-2 bg-yellow-700 rounded-md m-4 w-96 min-h-0">
+                <tr className="flex place-content-around border-2 bg-gray-500 rounded-md m-4 w-96 min-h-0">
                   <td className="font-mono text-white text-center hover:transform space-x-9 cursor-pointer mt-1">{data.task}</td>
-                  <Link to="/update"><td className="font-mono text-white border-2 bg-blue-700 border-blue-800 h-7 rounded-md mt-1"><button onClick={() => setData(data)} className="rounded-md">update</button></td></Link>
+
+                  <Link to="/update"><td className="font-mono text-white border-2 bg-blue-700 border-blue-800 h-7 rounded-md mx-2"><button onClick={() => setData(data)} className="rounded-md ">update</button></td></Link>
+
                   <td className="font-mono text-white border-2 bg-blue-300 border-blue-300 h-7 rounded-md mt-1"><button>delete</button></td>
                 </tr>
               )
