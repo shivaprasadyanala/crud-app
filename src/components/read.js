@@ -13,6 +13,18 @@ const Read = () => {
   // apiData.map((data) => {
   //  console.log(data.task);
   // })
+  const getData = (() => {
+    axios.get(`https://61a710b48395690017be94af.mockapi.io/fake-data`)
+      .then((response) => {
+        setApiData(response.data);
+      })
+  })
+  const deleteData = (id) => {
+    axios.delete(`https://61a710b48395690017be94af.mockapi.io/fake-data/${id}`)
+      .then(() => {
+        getData();
+      })
+  }
   const setData = (data) => {
     localStorage.setItem('ID', data.id)
     localStorage.setItem('task', data.task)
@@ -35,7 +47,7 @@ const Read = () => {
 
                   <Link to="/update"><td className="font-mono text-white border-2 bg-blue-700 border-blue-800 h-7 rounded-md mx-2"><button onClick={() => setData(data)} className="rounded-md ">update</button></td></Link>
 
-                  <td className="font-mono text-white border-2 bg-blue-300 border-blue-300 h-7 rounded-md mt-1"><button>delete</button></td>
+                  <td className="font-mono text-white border-2 bg-blue-300 border-blue-300 h-7 rounded-md mt-1"><button onClick={() => deleteData(data.id)}>delete</button></td>
                 </tr>
               )
             })}
