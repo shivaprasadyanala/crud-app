@@ -8,6 +8,8 @@ module.exports = {
         extend: {
             borderStyle: ['hover', 'focus'],
             tableLayout: ['hover', 'focus'],
+            transform: ['hover', 'focus'],
+            letterSpacing: ['hover', 'focus'],
         },
     },
     plugins: [],
