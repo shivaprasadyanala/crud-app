@@ -11,7 +11,7 @@ function App() {
     // <Create />
     <Router>
       <div className="main bg-gray-600 h-screen">
-        <h1 className="main-header text-4xl mb-5 text-white font-mono text-center">React Crud Operations</h1>
+        <h1 className="main-header text-4xl mb-5 text-white font-mono text-center">Take your notes</h1>
         <div className="grid justify-items-center">
           <nav className="bg-gray-400 text-white w-96 p-3 rounded-md ">
             <ul className="flex flex-row place-content-around ">
