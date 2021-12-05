@@ -49,7 +49,7 @@ const Read = () => {
   return (
     <div className="grid justify-items-center mt-9" >
 
-      <table className="grid justify-items-center bg-yellow-200 rounded-lg p-12">
+      <table className="grid justify-items-center bg-yellow-300 rounded-lg p-12">
         <thead>
           <ToastContainer
             position="top-center"
