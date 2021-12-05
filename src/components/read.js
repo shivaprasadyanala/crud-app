@@ -1,10 +1,10 @@
 import axios from 'axios';
-import { react, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 // import { useAlert } from 'react-alert';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 const Read = () => {
   // const alert = useAlert()
   const [apiData, setApiData] = useState([]);
