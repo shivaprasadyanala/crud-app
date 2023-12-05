@@ -70,7 +70,7 @@ const Read = () => {
           {
             apiData.map((data) => {
               return (
-                <tr className="flex place-content-around border-2 bg-red-400 rounded-md m-4 w-96 min-h-0 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
+                <tr className="flex p-2 place-content-around border-2 bg-red-400 rounded-md m-4 w-96 min-h-0 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
                   <td className="font-mono text-white text-center">{data.task}</td>
 
                   <Link to="/update"><td className="font-mono text-white border-2 bg-blue-700 border-blue-800 h-7 rounded-md mx-2"><button onClick={() => setData(data)} className="rounded-md ">update</button></td></Link>
